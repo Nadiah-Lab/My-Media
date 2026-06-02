@@ -874,6 +874,5 @@ function restartGame() {
         boat.style.bottom = boatCoordinates.start.bottom;
         boat.style.left = boatCoordinates.start.left;
     }
-    
     switchScreen('homeScreen');
 }
