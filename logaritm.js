@@ -418,7 +418,7 @@ const gameDatabase = {
                  </p>
                  
                  <div class="log-proof-container">
-                     <div style="display: grid; grid-template-columns: auto auto 1fr; gap: 8px; line-height: 1.8;">
+                     <div class="log-grid-container">
                          <div><sup>m</sup>log(a<sup>x</sup>)</div> <div>=</div> <div><sup>m</sup>log b</div>
                          <div>x &middot; <sup>m</sup>log a</div> <div>=</div> <div><sup>m</sup>log b &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>(Sifat pangkat sebelumnya)</em></div>
                          <div>x</div> <div>=</div> <div><div class="log-fraction"><div class="log-frac-line"><sup>m</sup>log b</div><div><sup>m</sup>log a</div></div></div>
@@ -429,7 +429,7 @@ const gameDatabase = {
                  <div class="log-example-container">
                      <strong>💡 Contoh:</strong>
                      <div class="log-example-box" style="border-left-color: #f1c40f;">
-                         <div style="display: grid; grid-template-columns: auto auto 1fr; gap: 8px; line-height: 1.8; align-items: center;">
+                         <div class="log-grid-container" style="align-items: center;">
                              <div>1. Jika <sup>2</sup>log 3 = p, maka nilai <sup>3</sup>log 2</div> <div>=</div> <div><div class="log-fraction"><div class="log-frac-line">1</div><div><sup>2</sup>log 3</div></div></div>
                              <div></div> <div>=</div> <div><span class="log-highlight"><div class="log-fraction"><div style="border-bottom: 1px solid #ffff; padding: 0 5px;">1</div><div>p</div></div></span></div>
                              
@@ -513,7 +513,7 @@ const gameDatabase = {
                  </p>
                  
                  <div class="log-proof-container">
-                     <div style="display: grid; grid-template-columns: auto auto 1fr; gap: 8px; line-height: 1.8;">
+                     <div class="log-grid-container">
                          <div><sup>a</sup>log b &middot; <sup>b</sup>log c</div> <div>=</div> <div><div class="log-fraction"><div class="log-frac-line"><sup>m</sup>log b</div><div><sup>m</sup>log a</div></div> &times; <div class="log-fraction"><div class="log-frac-line"><sup>m</sup>log c</div><div><sup>m</sup>log b</div></div></div>
                          <div></div> <div>=</div> <div><div class="log-fraction"><div class="log-frac-line"><sup>m</sup>log c</div><div><sup>m</sup>log a</div></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>(Eliminasi <sup>m</sup>log b yang sama)</em></div>
                          <div><sup>a</sup>log b &middot; <sup>b</sup>log c</div> <div>=</div> <div><span class="log-highlight" style="color: #ffff;"><sup>a</sup>log c</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>(Kembalikan ke sifat awal)</em></div>
@@ -523,7 +523,7 @@ const gameDatabase = {
                  <div class="log-example-container">
                      <strong>💡 Contoh:</strong>
                      <div class="log-example-box">
-                         <div style="display: grid; grid-template-columns: auto auto 1fr; gap: 8px; line-height: 1.8; align-items: center;">
+                         <div class="log-grid-container" style="align-items: center;">
                              <div>1. <sup>2</sup>log 3 &middot; <sup>3</sup>log 8</div> <div>=</div> <div><sup>2</sup>log 8</div>
                              <div></div> <div>=</div> <div><sup>2</sup>log 2<sup>3</sup> = 3 &middot; <sup>2</sup>log 2 = <span class="log-highlight">3</span></div>
                              
