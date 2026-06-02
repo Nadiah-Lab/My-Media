@@ -33,7 +33,7 @@ document.addEventListener('click', function() {
 const badgeInfo = {
     sabang: { 
         title: "⚓ Lencana Titik Nol", 
-        desc: "Selamat! Jangkar kapalmu telah menancap di titik nol kilometer Maritim Indonesia yang menjadi gerbang paling barat Nusantara. Kamu terbukti mampu menerapkan sifat dasar (identitas) logaritma." 
+        desc: "Selamat! Jangkar kapalmu telah menancap di titik nol kilometer maritim Indonesia yang menjadi gerbang paling barat Nusantara. Kamu terbukti mampu menerapkan sifat dasar (identitas) logaritma." 
     },
     sumatera: { 
         title: "🐯 Lencana Harimau Sumatra", 
@@ -65,7 +65,7 @@ const gameDatabase = {
     sabang: {
         name: "Pulau Weh (Sabang)",
         timeLimit: 15,
-        story: "Selamat datang di titik nol Barat Indonesia, Pulau Weh. Mulailah perjalananmu dengan mempelajari dua sifat logaritma dasar (identitas)..",
+        story: "Selamat datang di titik nol Barat Indonesia, Pulau Weh. Mulailah perjalananmu dengan mempelajari dua sifat logaritma dasar (identitas).",
         materi: `Logaritma merupakan kebalikan (invers) dari eksponen (perpangkatan). 
                  Jika bentuk pangkatnya adalah <strong>a<sup>b</sup> = c</strong>, maka bentuk logaritmanya menjadi:
                  
@@ -152,7 +152,7 @@ const gameDatabase = {
         name: "Pulau Jawa",
         timeLimit: 35, 
         story: "Selamat datang di Pulau Jawa! Di pulau ini, kamu akan belajar sifat perkalian logaritma.",
-        materi: `Sifat perkalian numerus dapat dipecah menjadi penjumlahan logaritma dan sebaliknya, penjumlahan logaritma berbasis sama dapat digabung menjadi perkalian numerus:
+        materi: `Sifat perkalian numerus dapat dipecah menjadi penjumlahan logaritma dan sebaliknya, penjumlahan logaritma dengan basis yang sama dapat digabung menjadi perkalian numerus:
                  
                  <div class="math-block">
                      <sup>a</sup>log(b × c) = <sup>a</sup>log b + <sup>a</sup>log c <br>
@@ -178,7 +178,7 @@ const gameDatabase = {
                          <div style="display: grid; grid-template-columns: auto auto 1fr; gap: 8px; line-height: 1.8; align-items: center;">
                              
                              <div>1. <sup>2</sup>log(4 × 8)</div> <div>=</div> <div><sup>2</sup>log 4 + <sup>2</sup>log 8</div>
-                                                    <div></div>   <div>=</div> <div>3</div>
+                                                    <div></div>   <div>=</div> <div>5</div>
                              
                              <div style="grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,0.1); margin: 5px 0;"></div>
                              
@@ -202,7 +202,7 @@ const gameDatabase = {
             { q: "Jika diketahui <sup>3</sup>log(3 × 9), bentuk penjumlahannya yang benar adalah...", o: ["<sup>3</sup>log 3 × <sup>3</sup>log 9", "<sup>3</sup>log 3 + <sup>3</sup>log 9", "<sup>9</sup>log 3 + <sup>3</sup>log 3", "<sup>3</sup>log 27"], a: 1 },
             { q: "Berapakah nilai akhir dari <sup>6</sup>log 4 + <sup>6</sup>log 9?", o: ["2", "3", "13", "36"], a: 0 }, 
             { q: "Berapakah hasil dari <sup>2</sup>log 5 + <sup>2</sup>log 0,2 + <sup>5</sup>log 1?", o: ["1", "0", "2", "5"], a: 1 }, 
-            { q: "Berapa hasil dari: <sup>3</sup>log 2 + <sup>3</sup>log 4,5 + <sup>2</sup>log 2<sup>3</sup>?", o: ["4", "5", "6", "9"], a: 1 }, 
+            { q: "Berapa hasil dari <sup>3</sup>log 2 + <sup>3</sup>log 4,5 + <sup>2</sup>log 2<sup>3</sup>?", o: ["4", "5", "6", "9"], a: 1 }, 
             { q: "Manakah operasi penjumlahan berikut yang numerusnya tidak boleh dikalikan secara langsung?", o: ["<sup>2</sup>log 3 + <sup>2</sup>log 5", "<sup>3</sup>log 4 + <sup>3</sup>log 2", "<sup>2</sup>log 8 + <sup>3</sup>log 3", "<sup>10</sup>log 2 + <sup>10</sup>log 5"], a: 2 } 
         ],
         badgeSymbol: "🦅",
@@ -212,7 +212,7 @@ const gameDatabase = {
         name: "Pulau Kalimantan",
         timeLimit: 40, 
         story: "Menembus belantara hutan Kalimantan. Saatnya mempelajari sifat pembagian logaritma.",
-        materi: `Sifat pembagian numerus dapat dipecah menjadi pengurangan logaritma dan sebaliknya, pengurangan logaritma berbasis sama dapat digabung menjadi pembagian numerus:
+        materi: `Sifat pembagian numerus dapat dipecah menjadi pengurangan logaritma dan sebaliknya, pengurangan logaritma yang basisnya sama dapat digabung menjadi pembagian numerus:
                  
                  <div class="math-block">
                      <sup>a</sup>log <div style="color: #f1c40f; display: inline-block; vertical-align: middle; text-align: center;"><div style="border-bottom: 1px solid #f1c40f; padding: 0 5px;">b</div><div>c</div></div> = <sup>a</sup>log b - <sup>a</sup>log c <br>
@@ -269,7 +269,7 @@ const gameDatabase = {
                 a: 1 
             },
             { 
-                q: "Berapakah nilai akhir dari operasi: <sup>2</sup>log 24 - <sup>2</sup>log 3?", 
+                q: "Berapakah nilai akhir dari operasi <sup>2</sup>log 24 - <sup>2</sup>log 3?", 
                 o: [
                     "<sup>2</sup>log 21", 
                     "3", 
@@ -325,7 +325,7 @@ const gameDatabase = {
    sulawesi: {
         name: "Pulau Sulawesi",
         timeLimit: 35, 
-        story: "Berlayar ke Sulawesi, persiapkan dirimu untuk belajar sifat pangkat numerus logaritma.",
+        story: "Berlayar ke Pulau Sulawesi, persiapkan dirimu untuk belajar sifat pangkat numerus logaritma.",
         materi: `Berdasarkan sifat perpangkatan numerus, jika bilangan numerus memiliki eksponen (pangkat), maka eksponen tersebut dapat dipindahkan ke depan menjadi koefisien pengali logaritma dan sebaliknya, koefisien pengali di depan logaritma dapat dinyatakan kembali sebagai pangkat dari bilangan numerus tersebut:
                  
                  <div class="math-block">
@@ -351,7 +351,7 @@ const gameDatabase = {
                          <div style="display: grid; grid-template-columns: auto auto 1fr; gap: 8px; line-height: 1.8; align-items: center;">
                              <div>1. <sup>2</sup>log 2<sup>3</sup></div> <div>=</div> <div>3 &middot; <sup>2</sup>log 2</div>
                              <div></div> <div>=</div> <div>3 &times; 1</div>
-                             <div></div> <div>=<span style="color: #ffff;">3</span></div>
+                             <div></div> <div></div>  <div>=<span style="color: #ffff;">3</span></div>
                              
                              <div style="grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,0.1); margin: 5px 0;"></div>
                              
@@ -388,7 +388,7 @@ const gameDatabase = {
                 a: 2 
             },
             { 
-                q: "Tentukan nilai akhir dari: <sup>3</sup>log 3<sup>2</sup> + 3 &middot; <sup>2</sup>log 2", 
+                q: "Tentukan nilai akhir dari <sup>3</sup>log 3<sup>2</sup> + 3 &middot; <sup>2</sup>log 2", 
                 o: ["5", "6", "8", "9"], 
                 a: 0 
             },
