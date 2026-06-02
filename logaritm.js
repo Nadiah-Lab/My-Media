@@ -437,7 +437,8 @@ const gameDatabase = {
                              
                              <div>2. Nilai dari <div class="log-fraction"><div class="log-frac-line"><sup>3</sup>log 8</div><div><sup>3</sup>log 2</div></div></div> <div>=</div> <div><sup>2</sup>log 8</div>
                              <div></div> <div>=</div> <div><sup>2</sup>log 2<sup>3</sup> &nbsp;</div>
-                             <div></div> <div>=</div> <div>3 &middot; <sup>2</sup>log 2 = <span class="log-highlight">3</span></div>
+                             <div></div> <div>=</div> <div>3 &middot; <sup>2</sup>log 2</div>
+                             <div></div> <div>=</div> <div> class="log-highlight">3</div>
                          </div>
                      </div>
                  </div>`,
@@ -525,12 +526,15 @@ const gameDatabase = {
                      <div class="log-example-box">
                          <div class="log-grid-container" style="align-items: center;">
                              <div>1. <sup>2</sup>log 3 &middot; <sup>3</sup>log 8</div> <div>=</div> <div><sup>2</sup>log 8</div>
-                             <div></div> <div>=</div> <div><sup>2</sup>log 2<sup>3</sup> = 3 &middot; <sup>2</sup>log 2 = <span class="log-highlight">3</span></div>
+                             <div></div> <div>=</div> <div><sup>2</sup>log 2<sup>3</sup></div>
+                             <div></div> <div>=</div> <div>3 &middot; <sup>2</sup>log 2 </div>
+                             <div></div> <div>=</div> <div class="log-highlight">3</div>
                              
                              <div class="log-divider"></div>
                              
                              <div>2. <sup>5</sup>log 2 &middot; <sup>2</sup>log 7 &middot; <sup>7</sup>log 25</div> <div>=</div> <div><sup>5</sup>log 25</div>
-                             <div></div> <div>=</div> <div><sup>5</sup>log 5<sup>2</sup> = <span class="log-highlight">2</span></div>
+                             <div></div> <div>=</div> <div><sup>5</sup>log 5<sup>2</sup></div>
+                             <div></div> <div>=</div> <div class="log-highlight">2</div>
                          </div>
                      </div>
                  </div>`,
