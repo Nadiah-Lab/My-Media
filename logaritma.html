@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logadventure Nusantara - Belajar Logaritma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Goldman:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="logarit.css">
+</head>
+<body>
+
+    <audio id="bgmAudio" loop src="https://actions.google.com/sounds/v1/ambiences/morning_birds.ogg"></audio>
+    <audio id="sfxWin" src="https://actions.google.com/sounds/v1/cartoon/cartoon_cowbell.ogg"></audio>
+    <audio id="sfxLose" src="https://actions.google.com/sounds/v1/alarms/digital_watch_alarm_long.ogg"></audio>
+
+    <section id="homeScreen" class="screen active">
+        <video autoplay muted loop id="bg-video">
+        <source src="image/Fantasi Nusantara.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+        <div class="avatar-home-wrapper">
+            <img src="image/avatar.png" alt="Avatar" class="avatar-style">
+        </div>
+        
+        <h1 class="game-title">LOG ADVENTURE NUSANTARA</h1>
+        
+        <div class="menu-container">
+            <button class="btn btn-primary-emerald" onclick="switchScreen('cpScreen')">📜 Capaian Pembelajaran</button>
+            <button class="btn btn-primary-gold" onclick="switchScreen('tpScreen')">🎯 Tujuan Pembelajaran</button>
+            <button class="btn btn-premium-emerald" onclick="switchScreen('instruksiScreen')">📖 Petunjuk Penggunaan</button>
+            <button class="btn btn-premium-gold" onclick="switchScreen('mapScreen')">▶ Mulai</button>
+            
+        </div>
+    </section>
+
+    <section id="instruksiScreen" class="screen">
+        <div class="card container-small">
+            <h2 class="section-title text-center">📖 PETUNJUK PERMAINAN</h2>
+            
+            <div class="text-instruksi-box">
+                <ul class="instruction-list">
+                    <li><span>🗺️</span> <span><strong>Pilih pulau yang terbuka di peta Nusantara!</strong></span></li>
+                    <li><span>📚</span> <span><strong>Pelajari materi logaritma singkat di setiap pulau!</strong></span></li>
+                    <li><span>📝</span> <span><strong>Jawab soal pilihan ganda dengan benar!</strong></span></li>
+                    <li><span>⏳</span> <span><strong>Waktu menjawab setiap soal berbeda di setiap level.</strong></span></li>
+                    <li><span>❌</span> <span><strong>Jika salah, kamu harus mengulang level tersebut.</strong> </span></li>
+                    <li><span>🏅</span> <span><strong>Kumpulkan semua lencana khas daerah untuk menang!</strong></span></li>
+                </ul>
+            </div>
+            
+            <div class="menu-container-row">
+                <button class="btn btn-primary" onclick="switchScreen('mapScreen')">▶ MULAI</button>
+                <button class="btn btn-danger" onclick="switchScreen('homeScreen')">⬅ KEMBALI</button>
+            </div>
+        </div>
+    </section>
+   <div id="cpScreen" class="screen">
+    <div class="card container-small text-center">
+        <h2 class="section-title" style="color: #2ecc71;">📋 Capaian Pembelajaran</h2>
+        <div style="max-height: 40vh; overflow-y: auto; margin: 20px 0; padding-right: 10px; text-align: justify;">
+            <p style="color: #bdc3c7; line-height: 1.8; font-size: 1rem;">
+                <b>Pada akhir fase E, peserta didik dapat menggeneralisasi sifat-sifat operasi bilangan berpangkat (eksponen) dan logaritma.</b> 
+            </p>
+        </div>
+        <button class="btn btn-danger" onclick="switchScreen('homeScreen')">↩ KEMBALI</button>
+    </div>
+</div>
+
+<div id="tpScreen" class="screen">
+    <div class="card container-medium text-center">
+        <h2 class="section-title" style="color: #c9763b;">📋 Tujuan Pembelajaran</h2>
+        <div style="max-height: 45vh; overflow-y: auto; margin: 20px 0; padding-right: 10px; text-align: left;">
+            <ul style="color: #bdc3c7; line-height: 1.8; font-size: 0.95rem; padding-left: 20px;">
+                <li style="margin-bottom: 8px;"><strong>1. Peserta didik mampu menerapkan sifat logaritma dasar (identitas).</strong></li>
+                <li style="margin-bottom: 8px;"><strong>2. Peserta didik mampu menerapkan sifat pangkat logaritma.</strong></li>
+                <li style="margin-bottom: 8px;"><strong>3. Peserta didik mampu menerapkan sifat perkalian logaritma.</strong></li>
+                <li style="margin-bottom: 8px;"><strong>4. Peserta didik mampu menerapkan sifat pembagian logaritma.</strong></li> 
+                <li style="margin-bottom: 8px;"><strong>5. Peserta didik mampu menggunakan sifat pangkat numerus Logaritma.</strong></li>
+                <li style="margin-bottom: 8px;"><strong>6. Peserta didik mampu menerapkan sifat perubahan basis logaritma dan memanipulasi sifat kebalikannya.</strong></li>
+                <li style="margin-bottom: 8px;"><strong>7. Peserta didik mampu menyelesaikan sifat perkalian berantai logaritma.</strong></li>
+            </ul>
+        </div>
+        <button class="btn btn-danger" onclick="switchScreen('homeScreen')">↩ KEMBALI</button>
+    </div>
+</div>
+
+    <section id="mapScreen" class="screen-map-layout">
+        <div class="top-bar-map">
+            <button class="btn-home-icon" onclick="switchScreen('homeScreen')">🏠</button>
+            <h2 class="map-heading-text"> PETA PETUALANGAN LOGARITMA</h2>
+            <div class="right-stats-wrapper">
+                <div class="stat-item">⭐ Poin: <span id="lblScore">0</span></div>
+                <button class="btn-bag" onclick="toggleBag()">🎒 TAS BADGE</button>
+            </div>
+        </div>
+
+        <div class="map-view-area">
+            <div class="map-container">
+                <img src="image/map.png" alt="Peta Indonesia" class="map-bg">
+                <img src="image/perahu.png" alt="Perahu" id="playerBoat" class="boat">
+                <button id="pin-sabang" class="map-pin unlocked" onclick="selectIsland('sabang')">⚓ Pulau Weh (Sabang)</button>
+                <button id="pin-jawa" class="map-pin locked" onclick="selectIsland('jawa')">🔒 Jawa</button>
+                <button id="pin-sumatera" class="map-pin locked" onclick="selectIsland('sumatera')">🔒 Sumatera</button>
+                <button id="pin-kalimantan" class="map-pin locked" onclick="selectIsland('kalimantan')">🔒 Kalimantan</button>
+                <button id="pin-sulawesi" class="map-pin locked" onclick="selectIsland('sulawesi')">🔒 Sulawesi</button>
+                <button id="pin-papua" class="map-pin locked" onclick="selectIsland('papua')">🔒 Papua</button>
+                <button id="pin-merauke" class="map-pin locked" onclick="selectIsland('merauke')">🔒 Merauke</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="levelScreen" class="screen">
+        <div class="card container-medium text-center">
+            <div id="storyPhase">
+                <h2 id="storyTitle" class="section-title">Selamat Datang!</h2>
+                <p id="storyText" class="story-p"></p>
+                <button class="btn btn-primary" onclick="startMateriPhase()">LANJUT ➔</button>
+            </div>
+
+            <div id="materiPhase" class="hidden">
+                <h2 class="section-title">📚 Ruang Belajar</h2>
+                <div id="materiContent" class="materi-box"></div>
+                <button class="btn btn-primary" onclick="startQuizPhase()">MULAI KUIS ➔</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="quizScreen" class="screen">
+        <div class="quiz-container card">
+            <div class="quiz-header">
+                <span id="quizIslandName" style="color: #dfa620;">Pulau</span>
+                <div class="timer-box">⏳ <span id="timerText">10</span>s</div>
+            </div>
+            <div class="progress-bar-container">
+                <div id="quizProgress" class="progress-bar"></div>
+            </div>
+            <div class="quiz-body">
+                <h3 id="questionText" class="question-title">Pertanyaan Logaritma?</h3>
+                <div id="optionsContainer" class="options-grid"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="finalScreen" class="screen">
+        <div class="card container-medium text-center">
+            <h1 class="victory-title">🏆 MASTER LOGARITMA NUSANTARA 🏆</h1>
+            <p>Luar biasa! Kamu telah mengarungi seluruh lautan Indonesia dan mengoleksi seluruh lencana daerah.</p>
+            
+            <h3>🏅 Koleksi Badge Daerahmu:</h3>
+            <div id="finalBadgeContainer" class="badge-flex"></div>
+
+            <div class="reflection-box">
+                <label for="reflectionInput"><strong>🤔 Refleksi Petualangan:</strong> Apa yang paling berkesan atau kamu pelajari dari materi kali ini?</label>
+                <textarea id="reflectionInput" rows="3" placeholder="Tulis pendapat atau kesanmu di sini..."></textarea>
+            </div>
+
+            <div class="menu-container-row">
+                <button id="btnKirimRefleksi" class="btn btn-primary" onclick="submitReflection()">📤 KIRIM REFLEKSI</button>
+                
+                <button id="btnMainLagi" class="btn btn-secondary" onclick="restartGame()" style="display: none;">🎉 MAIN LAGI</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="bagPopup" class="modal-overlay hidden">
+        <div class="modal-card">
+            <h3 style="color: #dfa620; text-align: center; margin-bottom: 10px;">🎒 Isi Tas Badge</h3>
+            <div id="bagBadgeContainer" class="badge-flex"></div>
+            <button class="btn btn-danger" style="width: 100%; margin-top: 10px;" onclick="toggleBag()">Tutup</button>
+        </div>
+    </div>
+
+    <div id="feedbackPopup" class="modal-overlay hidden">
+        <div class="modal-card text-center scale-up">
+            <h2 id="feedbackTitle" style="color: #dfa620; margin-bottom: 10px;">Judul</h2>
+            <div id="feedbackContent" style="margin-bottom: 20px; line-height: 1.5;">Content</div>
+            <button id="feedbackBtn" class="btn btn-primary" style="width: 100%;" onclick="closeFeedback()">Lanjut</button>
+        </div>
+    </div>
+
+    <script src="logaritm.js"></script>
+</body>
+</html>
