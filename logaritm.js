@@ -351,7 +351,7 @@ const gameDatabase = {
                          <div style="display: grid; grid-template-columns: auto auto 1fr; gap: 8px; line-height: 1.8; align-items: center;">
                              <div>1. <sup>2</sup>log 2<sup>3</sup></div> <div>=</div> <div>3 &middot; <sup>2</sup>log 2</div>
                              <div></div> <div>=</div> <div>3 &times; 1</div>
-                             <div></div> <div>=<div></div><span style="color: #ffff;">3</span></div>
+                             <div></div> <div>=</div></div><span style="color: #ffff;">3</span></div>
                              
                              <div style="grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,0.1); margin: 5px 0;"></div>
                              
