@@ -444,7 +444,7 @@ const gameDatabase = {
                  </div>`,
         questions: [
             { 
-                q: "Jika diketahui <sup>2</sup>log 5 = x, maka nilai dari <sup>5</sup>log 2 berdasar sifat invers adalah...", 
+                q: "Jika diketahui <sup>2</sup>log 5 = x, maka nilai dari <sup>5</sup>log 2 berdasarkan sifat invers adalah...", 
                 o: [
                     "x", 
                     "-x", 
