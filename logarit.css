@@ -867,27 +867,15 @@ em {
    GAYA KHUSUS PAPUA & MERAUKE (OTOMATIS BERBARIS KE BAWAH)
    ========================================================================== */
 .log-grid-container {
-    display: grid;
-    /* Mengubah kolom menjadi 1 baris penuh agar semua elemen otomatis turun ke bawah */
-    grid-template-columns: 1fr !important; 
-    gap: 12px;
-    line-height: 1.8;
-    align-items: center;
-    /* Membuka kunci text agar fleksibel dan tidak memaksakan memanjang kesamping */
+    display: grid !important;
+    grid-template-columns: auto auto 1fr !important; /* Membuat susunan 3 kolom persis Sulawesi */
+    gap: 8px !important;                             /* Jarak kolom disamakan dengan Sulawesi */
+    line-height: 1.8 !important;
     white-space: normal !important; 
-    text-align: center; /* Membuat rumus rata tengah secara estetis setelah turun ke bawah */
+    text-align: left !important;                     /* Teks rumus otomatis rata kiri */
 }
 
-/* Memastikan tanda sama dengan (=) di Papua/Merauke memiliki ruang vertikal yang rapi */
-.log-grid-container > div:nth-child(3n+2) {
-    text-align: center;
-    font-weight: bold;
-    color: #ffffff; 
-    font-size: 1.2rem;
-    margin: 4px 0;
-}
-
-/* Modifikasi wadah grid khusus pada halaman pembuktian */
+/* Kotak abu-abu latar pembuktian rumus */
 .log-proof-container {
     text-align: left;
     background: rgba(0, 0, 0, 0.3);
@@ -896,10 +884,9 @@ em {
     margin: 10px 0;
     font-family: monospace;
     font-size: 0.95rem;
-    overflow-x: auto; /* Memunculkan scroll bar halus jika device terlalu kecil */
 }
 
-/* Wadah khusus untuk kotak contoh soal */
+/* Pengaturan area contoh soal */
 .log-example-container {
     text-align: left;
     margin-top: 15px;
@@ -912,10 +899,16 @@ em {
     border-left: 3px solid #ffffff;
     margin-top: 5px;
     font-family: monospace;
-    overflow-x: auto;
 }
 
-/* Pewarnaan teks tambahan */
+/* Garis pembatas horizontal transparan di dalam contoh soal */
+.log-divider {
+    grid-column: 1 / -1;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 5px 0;
+}
+
+/* Utilitas teks bawaan */
 .log-highlight {
     font-weight: bold;
 }
@@ -924,18 +917,4 @@ em {
     margin-top: 8px;
     font-size: 0.9rem;
     color: #bbbbbb;
-}
-
-.log-text-muted-pad {
-    margin-top: 8px;
-    font-size: 0.9rem;
-    color: #bbbbbb;
-    padding-left: 5px;
-}
-
-/* Garis pembatas abu transparan di dalam grid contoh soal */
-.log-divider {
-    grid-column: 1 / -1;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    margin: 5px 0;
 }
