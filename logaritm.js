@@ -438,7 +438,7 @@ const gameDatabase = {
                              <div>2. Nilai dari <div class="log-fraction"><div class="log-frac-line"><sup>3</sup>log 8</div><div><sup>3</sup>log 2</div></div></div> <div>=</div> <div><sup>2</sup>log 8</div>
                              <div></div> <div>=</div> <div><sup>2</sup>log 2<sup>3</sup> &nbsp;</div>
                              <div></div> <div>=</div> <div>3 &middot; <sup>2</sup>log 2</div>
-                             <div></div> <div>=</div> <div> class="log-highlight">3</div>
+                             <div></div> <div>=</div> <div class="log-highlight">3</div>
                          </div>
                      </div>
                  </div>`,
@@ -817,7 +817,7 @@ function submitReflection() {
     }
     
     playSFX('sfxWin');
-    showFeedbackPopup("🎉 REFLEKSI DIKIRIM", "Refleksi petualanganmu berhasil terkirim. Selamat kamu telah menyelesaikan Logventure Nusantara sebagai siswa yang hebat!");
+    showFeedbackPopup("🎉 REFLEKSI DIKIRIM", "Refleksi petualanganmu berhasil terkirim. Selamat kamu telah menyelesaikan Log Adventure Nusantara sebagai siswa yang hebat!");
 
     document.getElementById('reflectionInput').value = "";
     
