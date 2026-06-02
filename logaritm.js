@@ -508,7 +508,7 @@ const gameDatabase = {
                      <span style="color: #f1c40f;"><sup>a</sup>log b &middot; <sup>b</sup>log c &middot; <sup>c</sup>log d = <sup>a</sup>log d</span>
                  </div>
                  
-                 <strong>Pembuktian Sifat:</strong>
+                 <strong>Penjelasan:</strong>
                  <p class="log-text-muted">
                      Dengan mengubah setiap komponen logaritma menjadi bentuk pembagian berbasis baru m, kita dapat melihat hukum pembatalan aljabar:
                  </p>
