@@ -75,7 +75,7 @@ const gameDatabase = {
                  <ul style="list-style-type: disc; padding-left: 20px; margin: 10px 0; text-align: left;">
                      <li><strong>a</strong> = <strong>Basis</strong> (bilangan pokok), syaratnya harus positif dan tidak boleh sama dengan 1 (a > 0, a ≠ 1).</li>
                      <li><strong>b</strong> = <strong>Numerus</strong> (b > 0).</li>
-                     <li><strong>c</strong> = <strong>Hasil logaritma</strong> (bilangan yang dicari nilai logaritmanya), syaratnya harus lebih besar dari nol (c > 0).</li>
+                     <li><strong>c</strong> = <strong>Hasil logaritma</strong> (bilangan yang dicari nilai logaritmanya).</li>
                  </ul>
                  
                  <hr style="border: 0; border-top: 1px dashed #dfa620; margin: 15px 0;">
